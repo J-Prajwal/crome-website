@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body  background="https://i.ibb.co/sy9RhYF/croma.jpg">
+    <div id="container">
+      <a href="index.html"><i class="fa-solid fa-xmark cross"></i></a>
+    <div id="lc">
+       
+        <div><p id="login">Login</p></div>
+        <div class="or">OR</div>
+        <div><p id="ca">Create Account</p></div>
+    </div>
+    <p id="enter">Enter your Mobile number to receive OTP</p>
+     <input id="mobile" type="tel" pattern="[0-9]{4}-[0-9]{6}"  placeholder="Enter Mobile Number"/><br/>
+     <div class="form-check keep ">
+        <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label keepcursor" for="flexCheckChecked">
+          Keep me signed in
+        </label>
+        <p id="lastline">By continuing you agree to our <span id="span">Terms of Use</span> & <span id="span">Privacy Policy</span></p>
+      </div>
+      <a href="otp.html"><button id="btn">Continue</button></a> 
+    </div>
+</body>
+</html>
+<script src="login.js"></script>
