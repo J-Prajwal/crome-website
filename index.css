@@ -6,13 +6,12 @@
     margin-top: 20px;
     margin: auto;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     padding-top: 5px;
 }
 
 #container {
-    
     display: flex;
     width: 85%;
     /* border: 1px solid red; */
@@ -133,8 +132,34 @@ div .fa {
     /* height: 250px; */
 }
 
-
 #products .slider1 {
     margin: auto;
     width: 100%;
+}
+
+#fixedContainer {
+    cursor: pointer;
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#fixedContainer div {
+    margin: auto;
+    /* margin-top: 5px; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 310px;
+}
+
+#fixedContainer div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
