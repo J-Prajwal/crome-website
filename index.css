@@ -163,3 +163,49 @@ div .fa {
     height: 100%;
     border-radius: 10px;
 }
+
+#brandContainer {
+    cursor: pointer;
+    display: flex;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 10px;
+    /* gap: 10px; */
+}
+
+#brandContainer div {
+    margin: auto;
+    /* margin-top: 5px; */
+    border-radius: 10px;
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: auto;
+}
+
+#brandContainer div img{
+    padding: 15px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#brandContainer .slider3 {
+    width: 100%;
+    margin: auto;
+}
+
+/* nav { */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* border: 1px solid red;
+} */
+/* 
+nav .slider4 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 100%;
+    height: 100px;
+} */
