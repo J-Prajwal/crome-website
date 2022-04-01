@@ -21,8 +21,8 @@
 
 .fh{
     font-weight: bolder;
-    margin-bottom: 20px;
-    margin-left: 0px;
+    margin-bottom: 40px;
+    margin-left: -20px;
 }
 
 #footinp{
@@ -46,9 +46,6 @@
     border: 0.2px solid white;
     width: 0px;
     height: 100%;
-
-    
-    
 }
 .list{
     

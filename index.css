@@ -267,7 +267,47 @@ div .fa {
 
 .tataAdvantagesContainer {
     width: 100%;
+    /* border: 1px solid red; */
+    height: 350px;
+    background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645445289/Croma%20Assets/CMS/Homepage%20Banners/Other/bg_eacw6e.png/mxw_1440,f_auto");
+}
+
+/* .tataAdvantagesContainer div:nth-child(1) {
     border: 1px solid red;
     height: auto;
-    background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645445289/Croma%20Assets/CMS/Homepage%20Banners/Other/bg_eacw6e.png/mxw_1440,f_auto");
+} */
+
+#advBox {
+    /* border: 1px solid red; */
+    height: 285px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 13px;
+    margin-left: 100px;
+}
+
+#advBox img {
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.contents p {
+    word-spacing: 2px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#link {
+    color: teal;
+    text-decoration: underline;
 }
