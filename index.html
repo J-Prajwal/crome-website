@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="footer.css">
   <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="signup.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,7 +24,6 @@
   <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 
   <style>
-
     /* footer part */
 
     #navbar1 {
@@ -61,6 +60,7 @@
     }
 
     #menu1 {
+      z-index: 1000;
       text-decoration: none;
       background-color: black;
       color: white;
@@ -113,6 +113,10 @@
 
     #pen {
       margin-left: 10px;
+    }
+
+    #user {
+      margin-left: 50px;
     }
 
     #user>a {
@@ -216,7 +220,7 @@
         <a id="menu1" href=""><span><i class="fa-solid fa-bars"></i></a>
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Menu</button>
-          <div id="myDropdown" class="dropdown-content">
+          <div id="myDropdown" class="dropdown-content" style="position: absolute; z-index: 999; overflow: scroll; height: 600px; width: 250px;">
             <a href="">Mobiles</a>
             <a href="">Televisions & Accessories</a>
             <a href="">Laptops</a>
@@ -234,8 +238,6 @@
         </div>
 
       </div>
-
-
 
       <div><input id="search" type="search" placeholder="What are you looking for? "></div>
     </div>
@@ -419,7 +421,9 @@
   <!-- Highlights part end -->
 
   <!-- Popular Brands part start -->
-  <div class="headings" style="margin-top: 25px;">Popular Brands</div>
+  <div class="headings" style="margin-top: 25px;">
+    Popular Brands
+  </div>
 
   <div id="container2">
     <div class="slider">
@@ -788,6 +792,35 @@
   </div>
   <!-- Apples at croma part ends -->
 
+  <!-- Experience In Spotlight Starts Here -->
+  <div class="headings" style="margin-top: 25px;">
+    Experience In Spotlight
+  </div>
+  <div id="fixedContainer">
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1648707643/Croma%20Assets/CMS/Homepage%20Banners/Experiences%20In%20Spotlight/2022/HP_SpotlightMW_31March2022_xipiu0.png/mxw_1440,f_auto"
+        alt=""></div>
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1648707643/Croma%20Assets/CMS/Homepage%20Banners/Experiences%20In%20Spotlight/2022/HP_Spotlight_AC_31March2022_lej6yu.png/mxw_1440,f_auto"
+        alt=""></div>
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1648707643/Croma%20Assets/CMS/Homepage%20Banners/Experiences%20In%20Spotlight/2022/HP_Spotlight_WM_31March2022_ba2jpd.png/mxw_1440,f_auto"
+        alt=""></div>
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1643378307/Croma%20Assets/CMS/Homepage%20Banners/AFTER%20REPUBLIC%20-%20REVAMP/Experiences%20in%20Spotlight/HP_ExpInSpotlight_382x416_ActionCameras_28Jan2022_d2p3d6.png/mxw_1440,f_auto"
+        alt=""></div>
+  </div>
+  <!-- Experience In Spotlight Ends Here -->
+
+  <div id="fixedContainer2">
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1646047552/Croma%20Assets/CMS/Homepage%20Banners/Big%20Tile/HP_BigTile_790x418_Audio_27Feb2022_nwptkg.jpg/mxw_1440,f_auto"
+        alt=""></div>
+    <div><img
+        src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1646047552/Croma%20Assets/CMS/Homepage%20Banners/Big%20Tile/HP_BigTile_790x418_27Feb2022_apzuql.jpg/mxw_1440,f_auto"
+        alt=""></div>
+  </div>
+
   <!-- Top Brands part starts here -->
   <div class="headings">
     Top Brands
@@ -842,88 +875,112 @@
     </div>
   </div>
   <!-- Top Brands part ends here -->
-  <footer>
-    <div id="container">
-      <div>
-        <h4>CONNECT WITH US</h4>
-        <div id="inp">
-          <input type="email" placeholder="Enter Email ID">
-          <button><i class="fa-solid fa-arrow-right-long"></i></button>
-        </div>
 
-        <div id="logoCollector">
-          <a href="https://www.youtube.com/user/CromaRetail"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.facebook.com/CromaRetail/"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/croma.retail/"><i class="fa-brands fa-instagram-square"></i></a>
-          <a href="https://www.linkedin.com/company/infiniti-retail-limited-croma---a-tata-enterprise"><i
-              class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/cromaretail?s=11"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <p>© Copyright 2021 Croma. All rights reserved</p>
-
-      </div>
-      <div class="line">
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <h4>USEFUL LINKS</h4>
-        </div>
-        <div class="list">
-          <div><a href="https://www.croma.com/about-croma">About Croma</a></div>
-          <div><a href="https://www.croma.com/lp-croma-e-care">E-Care</a></div>
-          <div><a href="https://www.croma.com/helpAndSupport">Help And Support</a></div>
-          <div><a href="https://www.croma.com/franchise-opportunity">Franchise Opportunity</a></div>
-          <div><a href="https://www.croma.com/faq">FAQs</a></div>
-          <div><a href="https://www.croma.com/site-map">Site MAP</a></div>
-          <div><a href="https://www.croma.com/cancellation-and-return">Return Policy</a></div>
-          <div><a href="https://www.croma.com/careers-at-croma">Careers At Croma</a></div>
-          <div><a
-              href="https://www.croma.com/bulk-order-and-gift-card-enquiry?cm_source=HPBulkEnquiry&cm_medium=Footer&cm_campaign=BulkEnquir">Bulk
-              Enquiry</a></div>
-          <div><a href="https://www.croma.com/terms-of-use">Terms Of Use</a></div>
-          <div><a href="https://www.croma.com/store?location=default">Store Locator</a></div>
-          <div><a href="https://www.croma.com/disclaimer">Disclaimer</a></div>
-          <div><a href="https://www.croma.com/delightful-programmes">Delightful Programmes</a></div>
-          <div><a href="https://www.croma.com/privacy-policy">Privacy Policy</a></div>
-        </div>
-
-      </div>
-      <div class="line">
-        <div></div>
-      </div>
-      <div>
-        <div>
-          <h4>PRODUCTS</h4>
-        </div>
-        <div class="list">
-          <div><a href="https://www.croma.com/televisions-accessories/c/997">Telivisions & Accessories</a></div>
-          <div><a href="https://www.croma.com/grooming-wellness/c/1021">Grooming & Personal Care</a></div>
-          <div><a href="https://www.croma.com/home-appliances/c/5">Home Appliances</a></div>
-          <div><a href="https://www.croma.com/cameras-accessories/c/2">Cameras & Accessories</a></div>
-          <div><a href="https://www.croma.com/phones-wearables/c/1">Phones and Wearables</a></div>
-          <div><a href="https://www.croma.com/smart-devices/c/3002">Smart Devices</a></div>
-          <div><a href="https://www.croma.com/computers-tablets/c/3">Computers and Tablets</a></div>
-          <div><a href="https://www.croma.com/gaming/c/7">Gaming</a></div>
-          <div><a href="https://www.croma.com/kitchen-appliances/c/864">Kitchen Appliances</a></div>
-          <div><a href="https://www.croma.com/accessories/c/8">Accessories</a></div>
-          <div><a href="https://www.croma.com/audio-video/c/292">Audio & Video</a></div>
-          <div><a href="https://www.croma.com/top-brands/c/topbrands">Top Brands</a></div>
-          <div><a href="https://www.croma.com/health-fitness/c/11">Health & Fitness</a></div>
-        </div>
-
-      </div>
-
+  <!-- Offers Slider Starts Here -->
+  <br>
+  <div id="container3">
+    <div class="slider">
+      <div style="margin-right: 10px;"><img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1647430063/Croma%20Assets/CMS/Homepage%20Banners/Croma%20Recommends/2022/HP_CR_522x418_16March2022_b1hz1n.png/mxw_1440,f_auto"
+          alt=""></div>
+      <div style="margin-right: 10px;"><img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1643378306/Croma%20Assets/CMS/Homepage%20Banners/AFTER%20REPUBLIC%20-%20REVAMP/Croma%20Recommends/HP_CR_522x418_GroomingDevices_28Jan2022_nbvubi.png/mxw_1440,f_auto"
+          alt=""></div>
+      <div style="margin-right: 10px;"><img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1643378307/Croma%20Assets/CMS/Homepage%20Banners/AFTER%20REPUBLIC%20-%20REVAMP/Croma%20Recommends/HP_CR_522x418_HardDisks_28Jan2022_aakx1g.png/mxw_1440,f_auto"
+          alt=""></div>
+      <div style="margin-right: 10px;"><img
+          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1643378306/Croma%20Assets/CMS/Homepage%20Banners/AFTER%20REPUBLIC%20-%20REVAMP/Croma%20Recommends/HP_CR_522x418_Dishwashers_28Jan2022_gyeloi.png/mxw_1440,f_auto"
+          alt=""></div>
     </div>
-  </footer>
+  </div>
+  <!-- Offers Slider Ends Here -->
+
+  <div class="safeContainer">
+    <img src="https://i.ibb.co/6XzmNs5/safe-shopping.jpg" alt="safe-shopping" border="0">
+  </div>
+
+  <div class="tataAdvantagesContainer">
+    
+  </div>
+
+  <!-- Footer sections starts here -->
+  <footer>
+    <div id="footermain">
+        <div>
+            <div><p class="fh">CONNECT WITH US</p></div>
+            <div id="inp">
+                <input type="email" placeholder= "Enter Email ID" id="footinp">
+                <button id="footbtn"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            
+            <div id="logoCollector">
+                <a href="https://www.youtube.com/user/CromaRetail"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/CromaRetail/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/croma.retail/"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/company/infiniti-retail-limited-croma---a-tata-enterprise"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/cromaretail?s=11"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p id="copyright">© Copyright 2021 Croma. All rights reserved</p>
+
+        </div>
+        <div class="footerline">
+            <div></div>
+        </div>
+        <div>
+            <div><p class="fh">USEFUL LINKS</p></div>
+            <div class="list">
+                <div><a href="https://www.croma.com/about-croma" >About Croma</a></div>
+                <div><a href="https://www.croma.com/lp-croma-e-care">E-Care</a></div>
+                <div><a href="https://www.croma.com/helpAndSupport">Help And Support</a></div>
+                <div><a href="https://www.croma.com/franchise-opportunity">Franchise Opportunity</a></div>
+                <div><a href="https://www.croma.com/faq">FAQs</a></div>
+                <div><a href="https://www.croma.com/site-map">Site MAP</a></div>
+                <div><a href="https://www.croma.com/cancellation-and-return">Return Policy</a></div>
+                <div><a href="https://www.croma.com/careers-at-croma">Careers At Croma</a></div>
+                <div><a href="https://www.croma.com/bulk-order-and-gift-card-enquiry?cm_source=HPBulkEnquiry&cm_medium=Footer&cm_campaign=BulkEnquir">Bulk Enquiry</a></div>
+                <div><a href="https://www.croma.com/terms-of-use">Terms Of Use</a></div>
+                <div><a href="https://www.croma.com/store?location=default">Store Locator</a></div>
+                <div><a href="https://www.croma.com/disclaimer">Disclaimer</a></div>
+                <div><a href="https://www.croma.com/delightful-programmes">Delightful Programmes</a></div>
+                <div><a href="https://www.croma.com/privacy-policy">Privacy Policy</a></div>
+            </div>
+           
+        </div>
+        <div class="footerline">
+            <div></div>
+        </div>
+        <div>
+            <div><p class="fh">PRODUCTS</p></div>
+            <div class="list">
+                <div><a href="https://www.croma.com/televisions-accessories/c/997">Telivisions & Accessories</a></div>
+                <div><a href="https://www.croma.com/grooming-wellness/c/1021">Grooming & Personal Care</a></div>
+                <div><a href="https://www.croma.com/home-appliances/c/5">Home Appliances</a></div>
+                <div><a href="https://www.croma.com/cameras-accessories/c/2">Cameras & Accessories</a></div>
+                <div><a href="https://www.croma.com/phones-wearables/c/1">Phones and Wearables</a></div>
+                <div><a href="https://www.croma.com/smart-devices/c/3002">Smart Devices</a></div>
+                <div><a href="https://www.croma.com/computers-tablets/c/3">Computers and Tablets</a></div>
+                <div><a href="https://www.croma.com/gaming/c/7">Gaming</a></div>
+                <div><a href="https://www.croma.com/kitchen-appliances/c/864">Kitchen Appliances</a></div>
+                <div><a href="https://www.croma.com/accessories/c/8">Accessories</a></div>
+                <div><a href="https://www.croma.com/audio-video/c/292">Audio & Video</a></div>
+                <div><a href="https://www.croma.com/top-brands/c/topbrands">Top Brands</a></div>
+                <div><a href="https://www.croma.com/health-fitness/c/11">Health & Fitness</a></div>
+            </div>
+
+        </div>
+       
+    </div>
+</footer>
+  <!-- Footer sections ends here -->
   <!-- Bootstrap Slider JS Script -->
-  <script src="script.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="footer.js"></script>
+  <script src="footer.js"></script>
   <script type="text/javascript">
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");

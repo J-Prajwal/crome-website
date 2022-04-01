@@ -1,6 +1,6 @@
-document.querySelector("button").addEventListener("click",myFunction);
+document.querySelector("#footbtn").addEventListener("click",myFunction);
 
     function myFunction(){
-        document.querySelector("input").placeholder="Invalid Email Address";
-        document.querySelector("input").value="";
+        document.querySelector("#footinp").placeholder="Invalid Email Address";
+        document.querySelector("#footinp").value="";
     }

@@ -1,39 +1,49 @@
-#container{
+
+        #footermain{
             /* border: 1px solid red; */
             background-color: rgb(29,29,29);
             color: white;
             height: auto;
             display: grid;
             grid-template-columns: repeat(5,auto);
+            margin-top: 20px;
+
             padding-bottom: 5%;
             padding-left: 3%;
             padding-right: 3%;
             padding-top: 2%;
         }
-        #container>div{
+        #footermain>div{
             /* border: 1px solid red; */
             padding-left: 10%;
             padding-right: 10%;
             
         }
-        input{
+
+        .fh{
+            font-weight: bolder;
+            margin-bottom: 20px;
+            margin-left: -20px;
+        }
+
+        #footinp{
             margin-top: 0px;
             padding: 5px;
             font-size: 20px;
             height: 100%;
-            border: 0;
+            border: none;
             width: 70%;
             outline: none;
             
         }
-        .line{
+        .footerline{
             /* border: 1px solid black; */
             padding-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .line>div{
+        .footerline>div{
             border: 0.2px solid white;
             width: 0px;
             height: 100%;
@@ -54,21 +64,22 @@
             
             padding-right: 10%;
         }
-        a{
+        .list a{
             text-decoration: none;
             font-size: 17px;
             font-weight: bold;
             color: white;
         }
-        a:hover{
+        .list a:hover{
             color: teal;
         }
         #logoCollector{
             padding: 3%;
         }
-        i{
+        #logoCollector>a{
             font-size: 25px;
             margin-right: 20px;
+            color: white;
         }
         #logoCollector>a:nth-child(1):hover{
             color: red;
@@ -89,7 +100,7 @@
         #logoCollector>a:nth-child(5):hover{
             color: rgb(29,155,240);
         }      
-        button{
+        #footbtn{
             /* border: 1px solid red; */
             border: none;
             background-color: white;
@@ -106,6 +117,10 @@
             border-radius: 10px;
             margin-top: -20px;
         }
-        button:hover{
+        #footbtn:hover{
             cursor: pointer;
+        }
+        #copyright{
+            font-weight: lighter;
+            margin-left: -15px;
         }
