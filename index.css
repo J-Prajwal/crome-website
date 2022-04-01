@@ -163,3 +163,111 @@ div .fa {
     height: 100%;
     border-radius: 10px;
 }
+
+#brandContainer {
+    cursor: pointer;
+    display: flex;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 10px;
+    /* gap: 10px; */
+}
+
+#brandContainer div {
+    margin: auto;
+    /* margin-top: 5px; */
+    border-radius: 10px;
+    /* border: 1px solid grey; */
+    width: 100%;
+    height: auto;
+}
+
+#brandContainer div img{
+    padding: 15px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#brandContainer .slider3 {
+    width: 100%;
+    margin: auto;
+}
+
+#fixedContainer2 {
+    cursor: pointer;
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#fixedContainer2 div {
+    margin: auto;
+    /* margin-top: 5px; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 310px;
+}
+
+#fixedContainer2 div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#container3 {
+    display: flex;
+    padding-top: 10px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: auto; */
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* gap: 10px; */
+}
+
+#container3 div {
+    /* margin-top: 15px; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    width: 100.5%;
+    height: 320px;
+}
+
+#container3 div:hover {
+    cursor: pointer;
+}
+
+#container3 div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#container3 .slider {
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 250px; */
+}
+
+.safeContainer {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tataAdvantagesContainer {
+    width: 100%;
+    border: 1px solid red;
+    height: auto;
+    background-image: url("https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645445289/Croma%20Assets/CMS/Homepage%20Banners/Other/bg_eacw6e.png/mxw_1440,f_auto");
+}
