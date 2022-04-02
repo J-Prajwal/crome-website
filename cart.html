@@ -1,237 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carts</title>
-    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
 
     <style>
-        @import url('http://fonts.cdnfonts.com/css/gotham');
+          @import url('http://fonts.cdnfonts.com/css/gotham');
 
-        #top {
-            padding-top: 10px;
-            width: 80%;
-            height: 600px;
-            /* border: 1px solid red; */
-            font-family: 'Gotham', sans-serif;
-            padding-left: 10%;
-            padding-right: 10%;
-            background-color: black;
-            color: white
-        }
+        #top{
+        padding-top: 10px;
+        width: 80%;
+        height:600px;
+        /* border: 1px solid red; */
+        font-family:'Gotham', sans-serif;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: rgba(3, 3, 3, 0.925);
+        color: white 
 
-        .top1 {
-            font-size: 12px;
-            /* border: 1px solid red; */
-        }
+        
+    }
 
-        .top2 {
-            /* border: 1px solid red; */
-            height: 300px;
-            display: flex;
-        }
+    .top1{
+        font-size: 12px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+        /* border: 1px solid red; */
+    }
+    .top2{
+        /* border: 1px solid red; */
+        height: 300px;
+        display: flex;
+    }
+    .top2a{
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        /* margin-bottom: 10px; */
+    }
+    .top2a1>button{
+        padding:10px 40px 10px 40px;
+        border-radius: 10px;
+        background-color: #00e9bf;
+    }
 
-        .top2a {
-            /* border: 1px solid blue; */
-            width: 100%;
-            display: flex;
-        }
+    .top2a2{
+        margin-left: 10px ;
+        margin-top: -10px ;
+        color: white;
+        /* border: 1px solid yellow; */
+    }
+    .top2b{
+        border: 1px solid gray;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 15px;
+    }
 
-        .top2a1>button {
-            padding: 10px 40px 10px 40px;
-            border-radius: 10px;
-            background-color: #00e9bf;
-        }
+    .img_persent{
+        width: 30px;
+        height: 30px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        margin: 10px 7px 7px 7px;
+    }
 
-        .top2a2 {
-            margin-left: 10px;
-            margin-top: -10px;
-            color: white;
-            /* border: 1px solid yellow; */
-        }
+    #percent_img{
+        width: 100%;
+        border-radius: 50%;
+    }
 
-        .top2b {
-            border: 1px solid gray;
-            border-radius: 5px;
-            height: auto;
-            width: 100%;
-        }
+    .top2c{
+        display:flex;
+        width: 100%;
+        /* border: 1px solid green; */
+        height: 200px;
+    }
+    .top2d{
+        display: flex;
+        height: 100px;
+        /* border: 1px solid green; */
+        background-color: #3c3c3c;
+        padding-left: 10px;
 
-        .top2c {
-            display: flex;
-            width: 100%;
-            /* border: 1px solid green; */
-            height: 180px;
+    }
 
-        }
+    .b1img{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+    }
+    .b1qty{
+        /* border: 1px solid white; */
+        width: 50px;
+        height: 30px;
+        margin: auto;
+        margin-top: 15px;
+        border-radius: 5px;
 
-        .b1 {
-            border: 1px solid red;
-            width: 15%;
-            height: 100%;
-        }
+       
+    }
 
-        .b2 {
-            border: 1px solid red;
-            width: 65%;
-            height: 100%;
-        }
+    .b1qty>#qty{
+        margin-top: 5px;
+        font-size:medium;
+        font-weight: 400;
+    }
 
-        .b3 {
-            border: 1px solid red;
-            width: 30%;
-            height: 100%;
-        }
+    .b1{
+        /* border: 1px solid red; */
+        width: 20%;
+        height: 200px;
+    }
+    .b2{
+        /* border: 1px solid red; */
+        width: 60%;
+        height: 200px;
+        padding-left: 10px;
+    }
 
-        .topfirst {
-            /* border: 1px solid pink; */
-            width: 70%;
-        }
+    .b3{
+        /* border: 1px solid red; */
+        width: 30%;
+        height: 200px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #offerDiv1{
+        width: 20%;
+        height: 100%;
+        margin-top: -10px;
+    }
+    #offerDiv2{
+        width: 60%;
+        margin-top: -10px;
+    }
+    #offerDiv2 p{
+        font-size: 15px;
+        font-weight: 400;
+        text-align: justify;
+        margin-right: 10px;
+    }
+    #offerDiv3 a{ 
+        color: #00e9bf;
+        font-size:14px;
+        padding-left: 50px;
+        font-weight: bold;
+    }
+    .topfirst{
+        /* border: 1px solid pink; */
+        width: 70%;
+    }
+    .topsecond{
+        /* border: 1px solid purple; */
+        width: 30%;
+        margin-left: 20px;
+    }
 
-        .topsecond {
-            /* border: 1px solid purple; */
-            width: 30%;
-            margin-left: 20px;
-        }
+    .second1{
+        border: 1px solid grey;
+        height: 250px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
 
-        .second1 {
-            border: 1px solid grey;
-            height: 25%;
-            border-radius: 5px;
-        }
+    .second2{
+        height: 65%;
+        border: 1px solid grey;
+        margin-top: 26px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    
+    img{
+        width: 100%;
+    }
+    p{
+        font-weight: bold;
+    }
 
-        .second2 {
-            height: 65%;
-            border: 1px solid grey;
-            margin-top: 26px;
-            border-radius: 5px;
-        }
+    .cart_optn{
+        display: flex;
+        padding-right: 10px;
+
+    }
+
+    .cart_optn>div{
+        margin-left: 10px;
+    }
+
+    .cart_optn>div>p{
+        font-weight: 200;
+    }
+    
+    .rem_buttom{
+        border: 1px solid white;
+        border-radius: 7px;
+        height: 25px;
+        background-color: rgba(3, 3, 3, 0.925);
+        color: white;
+        font-size: 15px;
+    }
+
+    .rating_star{
+        width: 50px;
+    }
+
+    .l_line{
+        border: 1px solid ;
+        border-width: 1px 0px 0px 0px;
+        border-color: gray;
+        width: 400px;
+        margin-top: 20px;
+    }
+    /* .second1>div{
+        border: 1px solid teal;
+    } */
+
+    .second1>#deli1,#deli2,#deli3{
+        display: flex; height: 35px;
+    }
+    .txt_color{
+        color: #00e9bf;
+    }
+    .pin{
+        text-decoration: none;
+        color: #00e9bf;
+    }
+    .sec1a>h2{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #deli1{
+        margin-top: 20px;
+    }
+    #deli2{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #deli3{
+        margin-top: 20px;
+    }
+    #deli1>div{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%; 
+        border:1px solid white;
+        margin: 4px 0 0 3px ;
+    }
+    #deli2>div{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%; 
+        border:1px solid white;
+        margin: 4px 0 0 3px ;
+    }
+    #deli3>.div1,.div2,.div3{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%; 
+        border:1px solid white;
+        margin: 4px 0 0 3px ;
+    }
+    #deli1>.deli_img{
+        border-radius: 0%;
+        width: 30px;
+        height: auto;
+        border: 0px;
+        margin-left: 7px;
+    }
+    #deli2>.deli_img{
+        border-radius: 0%;
+        width: 30px;
+        height: auto;
+        border: 0px;
+        margin-left: 7px;
+    }
+    #deli3>.deli_img{
+        border-radius: 0%;
+        width: 30px;
+        height: auto;
+        margin-left: 7px;
+    }
+    .anchorAnthrStore{
+        color: #00e9bf;
+        font-size: 12px;
+    }
+
+    .mrp{
+        font-weight: 100;
+        font-size: 10px;
+    }
+    .mrp_str{
+        font-weight: 100;
+        font-size: 11px;
+        text-decoration: line-through;
+    }
+    .price_line{
+        border: 0.5px solid grey;
+        color: grey;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pay{
+        display: flex;
+        align-items: center;
+    }
+    .right{
+        margin-left: 53%;
+        text-align: right;
+    }
+    .right1{
+        margin-left: 20%;
+        /* margin-right: 10px; */
+        text-align: right;
+    }
+    .ancr{
+        text-decoration: none;
+        color: #00e9bf;
+    }
+    .second2>div{
+        height: 30px;
+    }
+    .solid_line{
+        border: 0.2px solid grey;
+        width: 95%;
+        height: 0px;
+        padding: -10px;
+    }
     </style>
-
-
+    
+    
 
 </head>
-
 <body>
-
+    
     <div id="top">
         <div class="top1">
             <h1>YOUR CART</h1>
         </div>
         <div class="top2">
             <div class="topfirst">
-                <div class="top2a">
+                <!-- <div class="top2a">
                     <div class="top2a1">
-                        <button>Sign in </button>
+                        <button>Sign in </button> 
                     </div>
                     <div class="top2a2">
-                        <h4>to check out faster</h4>
+                      <h4>to check out faster</h4>
                     </div>
-                </div>
-
+                </div> -->
+    
                 <div class="top2b">
-                    <h3>APPLY COUPON</h3>
+                    <div class="img_persent">
+                        <img id="percent_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxcttqYl_9LVt13oHENHG_Y_rxKer7aq08Kk938PDWDzc1r3nM" alt="persentage">
+                    </div>
+                    <h3 style="padding: 0px -10px 2px 2px;">APPLY COUPON</h3>
+                    
+                </div>
+    
+                <div class="top2c">
+                    <div class="b1">
+                        <div class="b1img"></div>
+                        <div class="b1qty">
+                            <p id="qty">Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
                 </div>
 
-                <div class="top2c">
-                    <!-- <div class="b1"></div>
-                    <div class="b2"></div>
-                    <div class="b3"></div> -->
+                <div class="top2d">
+                    <div id="offerDiv1">
+                        <h5>Offer Applied<h5>
+                    </div>
+                    <div id="offerDiv2">
+                        <ul>
+                            <li>
+                               <p> Buy & Get Rs.150 off Green Exchange bonus on purchase of Wireless Earphones/Wireless Headphones/Truly wireless Earphones worth Rs.1999 or above (Discount applied in cart)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="offerDiv3">
+                        <a href="https://www.croma.com/">VIEW MORE</a>
+                    </div>
                 </div>
             </div>
 
             <div class="topsecond">
                 <div class="second1">
+                    <div class="sec1a">
+                        <h2>Delivery options for <a class="pin" href="">400049</a> <a class="txt_color" href="">Change</a> </h2>
+                    </div>
+                    
+                    <div id="deli1" >
+                        <div class="div1"><div style="width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%; 
+                                    border:1px solid white;
+                                    background-color:  teal;
+                                    margin: 3px  "></div>
+                         </div>
+                         <div class="deli_img"><img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828519/Croma%20Assets/UI%20Assets/Standard-Delivery-Black-Theme.svg/mxw_1440,f_auto" alt="sd"></div>
+                        <h5 style="margin: auto;
+                                margin-left: 13px;">Standard Delivery</h5>
+                    </div>
+                    
+                    <div id="deli2">
+                        <div class="div2"><div style="width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            padding: 5px;"></div></div>
+                        <div class="deli_img"><img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828617/Croma%20Assets/UI%20Assets/Store_Pickup_Black_Theme.svg/mxw_1440,f_auto" alt="pickup"></div>
+                        <h5 style="margin: auto;
+                                margin-left: 13px;">Available For Pickup Croma, Croma Sion</h5>
+                    </div>
+                    
+                    <div id="deli3">
+                        <div class="div3"><div style="width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            padding: 5px;"></div></div>
+                        <div class="deli_img"><img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828675/Croma%20Assets/UI%20Assets/Zip_Delivery_Black_Theme.svg/mxw_1440,f_auto" alt="free"></div>
+                        <h5 style="margin: auto;
+                        margin-left: 13px;">Free ZIP Delivery by 9:00 PM </h5>
+                    </div>
 
+                    <div><a class="anchorAnthrStore"href="">Select Another Store</a></div>
                 </div>
                 <div class="second2"></div>
             </div>
 
-
+            
         </div>
     </div>
-
-    <footer>
-        <div id="container">
-            <div>
-                <h4>CONNECT WITH US</h4>
-                <div id="inp">
-                    <input type="email" placeholder="Enter Email ID">
-                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
-                </div>
-
-                <div id="logoCollector">
-                    <a href="https://www.youtube.com/user/CromaRetail"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/CromaRetail/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/croma.retail/"><i class="fa-brands fa-instagram-square"></i></a>
-                    <a href="https://www.linkedin.com/company/infiniti-retail-limited-croma---a-tata-enterprise"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/cromaretail?s=11"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <p>© Copyright 2021 Croma. All rights reserved</p>
-
-            </div>
-            <div class="line">
-                <div></div>
-            </div>
-            <div>
-                <div>
-                    <h4>USEFUL LINKS</h4>
-                </div>
-                <div class="list">
-                    <div><a href="https://www.croma.com/about-croma">About Croma</a></div>
-                    <div><a href="https://www.croma.com/lp-croma-e-care">E-Care</a></div>
-                    <div><a href="https://www.croma.com/helpAndSupport">Help And Support</a></div>
-                    <div><a href="https://www.croma.com/franchise-opportunity">Franchise Opportunity</a></div>
-                    <div><a href="https://www.croma.com/faq">FAQs</a></div>
-                    <div><a href="https://www.croma.com/site-map">Site MAP</a></div>
-                    <div><a href="https://www.croma.com/cancellation-and-return">Return Policy</a></div>
-                    <div><a href="https://www.croma.com/careers-at-croma">Careers At Croma</a></div>
-                    <div><a
-                            href="https://www.croma.com/bulk-order-and-gift-card-enquiry?cm_source=HPBulkEnquiry&cm_medium=Footer&cm_campaign=BulkEnquir">Bulk
-                            Enquiry</a></div>
-                    <div><a href="https://www.croma.com/terms-of-use">Terms Of Use</a></div>
-                    <div><a href="https://www.croma.com/store?location=default">Store Locator</a></div>
-                    <div><a href="https://www.croma.com/disclaimer">Disclaimer</a></div>
-                    <div><a href="https://www.croma.com/delightful-programmes">Delightful Programmes</a></div>
-                    <div><a href="https://www.croma.com/privacy-policy">Privacy Policy</a></div>
-                </div>
-
-            </div>
-            <div class="line">
-                <div></div>
-            </div>
-            <div>
-                <div>
-                    <h4>PRODUCTS</h4>
-                </div>
-                <div class="list">
-                    <div><a href="https://www.croma.com/televisions-accessories/c/997">Telivisions & Accessories</a>
-                    </div>
-                    <div><a href="https://www.croma.com/grooming-wellness/c/1021">Grooming & Personal Care</a></div>
-                    <div><a href="https://www.croma.com/home-appliances/c/5">Home Appliances</a></div>
-                    <div><a href="https://www.croma.com/cameras-accessories/c/2">Cameras & Accessories</a></div>
-                    <div><a href="https://www.croma.com/phones-wearables/c/1">Phones and Wearables</a></div>
-                    <div><a href="https://www.croma.com/smart-devices/c/3002">Smart Devices</a></div>
-                    <div><a href="https://www.croma.com/computers-tablets/c/3">Computers and Tablets</a></div>
-                    <div><a href="https://www.croma.com/gaming/c/7">Gaming</a></div>
-                    <div><a href="https://www.croma.com/kitchen-appliances/c/864">Kitchen Appliances</a></div>
-                    <div><a href="https://www.croma.com/accessories/c/8">Accessories</a></div>
-                    <div><a href="https://www.croma.com/audio-video/c/292">Audio & Video</a></div>
-                    <div><a href="https://www.croma.com/top-brands/c/topbrands">Top Brands</a></div>
-                    <div><a href="https://www.croma.com/health-fitness/c/11">Health & Fitness</a></div>
-                </div>
-
-            </div>
-
-        </div>
-    </footer>
 </body>
-
 </html>
 
-<script src="cart.js"></script>
-<script src="footer.js"></script>
+<script>
+    var productArr= JSON.parse(localStorage.getItem("cart"));
+    console.log(productArr)
+
+    productArr.map(function (elem, index){
+    var img = document.createElement("img");
+    img.src = elem.imgUrl;
+
+    var name = document.createElement("p");
+    name.textContent = elem.itemName;
+
+    var price =document.createElement("p");
+    price.textContent = "$ "+elem.itemPrice;
+
+    var stricked_price =document.createElement("p");
+    stricked_price = "MRP $ "+elem.strikedOffPrice;
+
+    var total = productArr.reduce(function (sum, elem, index, arr) {
+    return sum + Number(elem.itemPrice);
+  }, 0);
+
+  var length = productArr.length;
+//   console.log(length);
+
+    var box_crtOption= document.createElement("div");
+    box_crtOption.setAttribute("class","cart_optn");
+    
+    // for cart options
+    var box_crtOption1=document.createElement("div");
+    var box_crtOption2=document.createElement("div");
+    var box_crtOption3=document.createElement("div");
+    var box_crtOption4=document.createElement("div");
+    var box_crtOption5=document.createElement("div");
+
+    var option1= document.createElement("p");
+    option1.textContent= "Free Delivery by 6 April 2022";
+    box_crtOption1.append(option1);
+
+    var option3= document.createElement("p");
+    option3.textContent= "Free Zip Delivery by 1:00 PM \n tomorrow";
+    box_crtOption3.append(option3);
+
+    var option5= document.createElement("p");
+    option5.textContent= "Pickup at Store";
+    box_crtOption5.append(option5);
+
+    box_crtOption.append(box_crtOption1,box_crtOption2,box_crtOption3,box_crtOption4,box_crtOption5);
+    
+        //for star image
+    var star=document.createElement("img");
+    star.setAttribute(
+    "src",
+    "https://pacouriers.uk/stars-4.png"
+  );
+  star.setAttribute("class","rating_star");
+
+    document.querySelector(".b1img").append(img);
+    document.querySelector(".b2").append(name,star,box_crtOption );
+    // cart option ended
+    
+    
+
+    var rem_but=document.createElement("button");
+    rem_but.innerText = "Remove";
+    rem_but.setAttribute("class","rem_buttom");
+    rem_but.addEventListener("click", function () {
+      removeItem(elem, index);
+    });
+
+    document.querySelector(".b2").append(rem_but);
+
+    var last_line= document.createElement("div");
+    last_line.setAttribute("class","l_line");
+    document.querySelector(".b2").append(last_line);
+
+    //for price coloumn
+    var pCol1= document.createElement("div");
+    pCol1.append(price);
+    document.querySelector(".b3").append(pCol1);
+
+    var pCol2 = document.createElement("div");
+    var pCol2a= document.createElement("p");
+    pCol2a.textContent="(Incl. all Taxes)";
+    pCol2a.setAttribute("class","mrp");
+    pCol2.append(pCol2a);
+    document.querySelector(".b3").append(pCol2);
+
+    var pCol3 = document.createElement("div");
+    pCol3.setAttribute("class","price_line");
+    document.querySelector(".b3").append(pCol3);
+
+    var pCol4 = document.createElement("div");
+    pCol4.append(stricked_price);
+    pCol4.setAttribute("class","mrp_str");
+    document.querySelector(".b3").append(pCol4);
+
+    var pCol5 = document.createElement("div");
+    pCol5.setAttribute("class","price_line");
+    document.querySelector(".b3").append(pCol5);
+
+
+    //for payment details
+    var pay1= document.createElement("div");
+    var pay1a= document.createElement("p");
+    pay1a.textContent="Payment Details";
+    pay1.append(pay1a);
+
+
+    var pay2= document.createElement("div");
+    pay2.setAttribute("class","pay");
+        var pay2a= document.createElement("div");
+        var pay2a1= document.createElement("p");
+        pay2a1.textContent="Item total";
+        pay2a.append(pay2a1);
+
+        var pay2b= document.createElement("div");
+        pay2b.setAttribute("class","right");
+        var t1="$ "+total;
+        pay2b.append(t1);
+    pay2.append(pay2a,pay2b);
+
+
+    var pay3= document.createElement("div");
+    pay3.setAttribute("class","pay");
+        var pay3a= document.createElement("div");
+        pay3a.setAttribute("class","pay");
+        var pay3a1=document.createElement("p");
+        pay3a1.textContent="Delivery cost at";
+        var pay3a2=document.createElement("a");
+        pay3a2.textContent="400049";
+        pay3a2.setAttribute("href","");
+        pay3a2.setAttribute("class","ancr");
+        pay3a.append(pay3a1,pay3a2);
+
+        var pay3b= document.createElement("div");
+        pay3b.setAttribute("class","right1");
+        var pay3b1=document.createElement("p");
+        pay3b1.textContent="Free";
+        pay3b.append(pay3b1);
+    pay3.append(pay3a,pay3b);
+
+    var pay4= document.createElement("div");
+        var pay4a= document.createElement("div");
+        pay4a.setAttribute("class","solid_line");
+        pay4.append(pay4a);
+    
+
+    var pay5= document.createElement("div");
+        pay5.setAttribute("class","pay");
+        var pay5a= document.createElement("div");
+        var pay5a1= document.createElement("p");
+        pay5a1.textContent="Total price";
+        pay5a.append(pay5a1);
+
+        var pay5b= document.createElement("div");
+        pay5b.setAttribute("class","right");
+        var t2="$ "+total;
+        pay5b.append(t2);
+    pay5.append(pay5a,pay5b);
+
+
+    var pay6= document.createElement("div");
+
+   
+    document.querySelector(".second2").append(pay1);
+    document.querySelector(".second2").append(pay2);
+    document.querySelector(".second2").append(pay3);
+    document.querySelector(".second2").append(pay4);
+    document.querySelector(".second2").append(pay5);
+
+
+
+
+    });
+
+    function removeItem(elem, index) {
+    console.log(elem, index);
+    productArr.splice(index, 1);
+    console.log(productArr);
+    localStorage.setItem("cart", JSON.stringify(productArr));
+    window.location.reload();
+  }
+
+    
+  </script>
